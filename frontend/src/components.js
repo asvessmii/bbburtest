@@ -200,12 +200,12 @@ export const TeamSection = () => {
           </div>
         </div>
         
-        {/* Первый член команды */}
+        {/* Первый член команды - Майор Пейн 1 */}
         <div className="flex items-center justify-between mb-32">
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1709888245955-d1bf81843f13?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxtaWxpdGFyeSUyMGNvbWVkeXxlbnwwfHx8fDE3NTM3OTA0NjZ8MA&ixlib=rb-4.1.0&q=85"
+                src="https://customer-assets.emergentagent.com/job_vas-clone/artifacts/m3huut1q_image.png"
                 alt="Лаута Олег Сергеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />

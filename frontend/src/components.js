@@ -340,10 +340,6 @@ export const PartnersSection = () => {
           </div>
         </div>
 
-        <h3 className="text-4xl font-black mb-12 text-center text-white">
-          Крупные предприятия и корпорации
-        </h3>
-
         <div className="grid grid-cols-4 gap-8">
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">

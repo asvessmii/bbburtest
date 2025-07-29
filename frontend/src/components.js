@@ -318,82 +318,29 @@ export const PartnersSection = () => {
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
               <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">ФСТЭК</span>
+                <span className="text-white font-bold text-xs">ФСВНГ РФ</span>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Федеральная служба по техническому  
-и экспортному контролю
+              Федеральная служба войск национальной
+  гвардии Российской Федерации
             </p>
           </div>
 
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
               <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">ФСВТС</span>
+                <span className="text-white font-bold text-xs">ГУСВС РФ</span>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Федеральная служба по военно-техническому  
-сотрудничеству
+              Главное управление связи 
+  Вооруженных сил Российской Федерации
             </p>
           </div>
         </div>
 
-        <div className="grid grid-cols-4 gap-8">
-          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
-            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">Ростех</span>
-              </div>
-            </div>
-            <p className="text-sm text-gray-300 leading-tight">
-              Государственная корпорация  
-"Ростех"
-            </p>
-          </div>
-
-          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
-            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">Росатом</span>
-              </div>
-            </div>
-            <p className="text-sm text-gray-300 leading-tight">
-              Государственная корпорация  
-по атомной энергии "Росатом"
-            </p>
-          </div>
-
-          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
-            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">Газпром</span>
-              </div>
-            </div>
-            <p className="text-sm text-gray-300 leading-tight">
-              Публичное акционерное общество  
-"Газпром"
-            </p>
-          </div>
-
-          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
-            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
-              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">Лукойл</span>
-              </div>
-            </div>
-            <p className="text-sm text-gray-300 leading-tight">
-              Публичное акционерное общество  
-"Лукойл"
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-};
-
+        
 export const FooterSection = () => {
   return (
     <footer className="bg-gray-900 py-12">

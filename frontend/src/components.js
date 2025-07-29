@@ -398,8 +398,7 @@ export const FooterSection = () => {
   return (
     <footer className="bg-gray-900 py-12">
       <div className="max-w-7xl mx-auto px-8 text-center text-gray-400">
-        <p>&copy; 2024 Технопарк Военной академии связи. Все права защищены.</p>
-        <p className="mt-2">Разработано командой Технопарка ВАС</p>
+        <p>&copy; 2025 Технопарк ВАС</p>
       </div>
     </footer>
   );

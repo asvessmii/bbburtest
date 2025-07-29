@@ -1,33 +1,23 @@
 import React from 'react';
 
-// Header Component - точная копия оригинала
+// Header Component - исправленная версия
 export const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-        {/* Logo Left - точно как в оригинале */}
-        <div className="bg-white rounded-full px-8 py-3 flex items-center space-x-3">
-          <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="white">
-              <path d="M13 3L4 14h7v7l9-11h-7V3z"/>
-            </svg>
+        {/* Центральный логотип - БЕЗ МОЛНИИ */}
+        <div className="absolute left-1/2 transform -translate-x-1/2">
+          <div className="bg-white rounded-full px-8 py-3 flex items-center">
+            <span className="text-black font-bold text-xl">ТЕХНОПАРК ВАС</span>
           </div>
-          <span className="text-black font-bold text-xl">ТЕХНОПАРК ВАС</span>
         </div>
         
-        {/* Logo Right - точно как в оригинале */}
-        <div className="border-2 border-white rounded-xl px-6 py-4">
-          <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-white rounded flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="black">
-                <path d="M12 2L8 8h8l-4-6zm0 20l4-6H8l4 6zm10-10l-6-4v8l6-4zM2 12l6 4V8l-6 4z"/>
-              </svg>
-            </div>
-            <div className="text-white text-sm font-bold leading-tight">
-              <div>ВОЕННАЯ</div>
-              <div>АКАДЕМИЯ</div>
-              <div>СВЯЗИ</div>
-            </div>
+        {/* Логотип справа - БЕЗ СТРЕЛОК, только текст */}
+        <div className="border-2 border-white rounded-xl px-6 py-4 ml-auto">
+          <div className="text-white text-sm font-bold leading-tight text-center">
+            <div>ВОЕННАЯ</div>
+            <div>АКАДЕМИЯ</div>
+            <div>СВЯЗИ</div>
           </div>
         </div>
       </div>
@@ -35,7 +25,7 @@ export const Header = () => {
   );
 };
 
-// Hero Section - точная копия оригинала
+// Hero Section - исправленная версия
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-black overflow-hidden">
@@ -77,23 +67,23 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Логотип ВАС слева внизу - точно как в оригинале */}
+      {/* Логотип ВАС слева внизу - БЕЗ ЗНАЧКОВ */}
       <div className="absolute bottom-32 left-16">
         <div className="w-32 h-32 border-4 border-white rounded-2xl flex items-center justify-center bg-black/20 backdrop-blur-sm">
-          <svg width="48" height="48" viewBox="0 0 24 24" fill="white">
-            <path d="M12 2L8 8h8l-4-6zm0 20l4-6H8l4 6zm10-10l-6-4v8l6-4zM2 12l6 4V8l-6 4z"/>
-          </svg>
+          <div className="text-white text-center font-bold">
+            <div className="text-xs">ВАС</div>
+          </div>
         </div>
       </div>
 
-      {/* Текст слева внизу - точно как в оригинале */}
+      {/* Текст слева внизу - ИСПРАВЛЕННЫЙ ЗАГОЛОВОК */}
       <div className="absolute bottom-32 left-56">
         <h1 className="text-7xl font-black leading-none text-white mb-4">
           ТЕХНОЛОГИИ
           <br />
           СВЯЗЬ
           <br />
-          ПОБЕД
+          ПОБЕДА
         </h1>
       </div>
 
@@ -107,7 +97,7 @@ export const HeroSection = () => {
   );
 };
 
-// Technologies Grid - точная копия оригинала
+// Technologies Grid - без изменений
 export const TechnologiesGrid = () => {
   const technologies = [
     { title: 'Информационная\nбезопасность', gradient: 'from-blue-500 via-purple-600 to-blue-700' },
@@ -167,7 +157,7 @@ export const TechnologiesGrid = () => {
   );
 };
 
-// About Section - точная копия оригинала
+// About Section - без изменений
 export const AboutSection = () => {
   return (
     <section className="py-24 bg-black relative overflow-hidden">
@@ -207,7 +197,7 @@ export const AboutSection = () => {
   );
 };
 
-// Team Section - точная копия оригинала
+// Team Section - с фотографиями военного характера (заменим на забавные военные фото)
 export const TeamSection = () => {
   return (
     <section className="py-24 bg-black relative overflow-hidden">
@@ -224,7 +214,7 @@ export const TeamSection = () => {
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=600&fit=crop&crop=face"
+                src="https://images.unsplash.com/photo-1709888245955-d1bf81843f13?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwzfHxtaWxpdGFyeSUyMGNvbWVkeXxlbnwwfHx8fDE3NTM3OTA0NjZ8MA&ixlib=rb-4.1.0&q=85"
                 alt="Лаута Олег Сергеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />
@@ -266,7 +256,7 @@ export const TeamSection = () => {
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=600&fit=crop&crop=face"
+                src="https://images.unsplash.com/photo-1572866069442-e7ac919a5c01?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxtaWxpdGFyeSUyMGNvbWVkeXxlbnwwfHx8fDE3NTM3OTA0NjZ8MA&ixlib=rb-4.1.0&q=85"
                 alt="Васильев Никита Алексеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />
@@ -283,31 +273,8 @@ export const TeamSection = () => {
   );
 };
 
-// Partners Section - точная копия оригинала
+// Partners Section - ИСПРАВЛЕННАЯ ВЕРСИЯ согласно оригиналу
 export const PartnersSection = () => {
-  const governmentLogos = [
-    { name: 'Министерство обороны\nРоссийской Федерации', icon: '🏛️' },
-    { name: 'Федеральная служба безопасности\nРоссийской Федерации', icon: '🛡️' },
-    { name: 'Федеральная служба охраны\nРоссийской Федерации', icon: '🔒' },
-    { name: 'Силы специальных операций\nРоссийской Федерации', icon: '⚡' },
-    { name: 'Служба внешней разведки\nРоссийской Федерации', icon: '🎯' },
-    { name: 'Федеральная служба войск\nнациональной гвардии\nРоссийской Федерации', icon: '🏴' },
-    { name: 'Главное управление связи\nВооруженных сил\nРоссийской Федерации', icon: '📡' }
-  ];
-
-  const corporateLogos = [
-    'СБЕР', 'ОТКРЫТАЯ\nМОБИЛЬНАЯ\nПЛАТФОРМА', 'масштаб', 'Folus', 'ГАЗПРОМБАНК', 'МИНОБРНАУКИ\nРОССИИ'
-  ];
-
-  const universityLogos = [
-    'УНИВЕРСИТЕТ\nИННОПОЛИС', 'Санкт-Петербургский\nгосударственный\nуниверситет', 'ПОЛИТЕХ', 
-    'МОСКОВСКИЙ\nПОЛИТЕХ', 'ТОМСКИЙ\nПОЛИТЕХ', 'НЭТИ'
-  ];
-
-  const additionalLogos = [
-    'СПбГУТ', 'СПбГЭТУ «ЛЭТИ»', 'МОИ', 'РУБИН', 'СПЕЦИАЛЬНЫЙ\nТЕХНОЛОГИЧЕСКИЙ\nЦЕНТР'
-  ];
-
   return (
     <section className="py-24 bg-black">
       <div className="max-w-7xl mx-auto px-8">
@@ -315,24 +282,100 @@ export const PartnersSection = () => {
           СОТРУДНИЧЕСТВО
         </h2>
         
-        {/* Государственные структуры */}
+        {/* Государственные структуры - верхняя строка */}
         <div className="grid grid-cols-4 gap-8 mb-16">
-          {governmentLogos.map((org, index) => (
-            <div key={index} className="text-center p-6 bg-gray-900/20 rounded-2xl border border-gray-800">
-              <div className="text-6xl mb-4">{org.icon}</div>
-              <p className="text-sm text-gray-300 whitespace-pre-line leading-tight">
-                {org.name}
-              </p>
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">МО РФ</span>
+              </div>
             </div>
-          ))}
+            <p className="text-sm text-gray-300 leading-tight">
+              Министерство обороны<br />Российской Федерации
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">ФСБ</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Федеральная служба безопасности<br />Российской Федерации
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">ФСО</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Федеральная служба охраны<br />Российской Федерации
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">ССО</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Силы специальных операций<br />Российской Федерации
+            </p>
+          </div>
+        </div>
+
+        {/* Государственные структуры - нижняя строка */}
+        <div className="grid grid-cols-3 gap-8 mb-16 justify-center">
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">СВР</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Служба внешней разведки<br />Российской Федерации
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">ФСВНГ</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Федеральная служба войск<br />национальной гвардии<br />Российской Федерации
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">ГУС</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Главное управление связи<br />Вооруженных сил<br />Российской Федерации
+            </p>
+          </div>
         </div>
 
         {/* Корпоративные партнеры */}
         <div className="grid grid-cols-6 gap-6 mb-16">
-          {corporateLogos.map((logo, index) => (
+          {[
+            'СБЕР', 'ОТКРЫТАЯ\nМОБИЛЬНАЯ\nПЛАТФОРМА', 'масштаб', 'Folus', 'ГАЗПРОМБАНК', 'МИНОБРНАУКИ\nРОССИИ'
+          ].map((name, index) => (
             <div key={index} className="text-center p-4 bg-gray-900/20 rounded-xl border border-gray-800">
-              <p className="text-sm font-bold text-white whitespace-pre-line">
-                {logo}
+              <div className="w-12 h-12 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">{name.split('\n')[0].slice(0, 3)}</span>
+              </div>
+              <p className="text-xs font-bold text-white whitespace-pre-line leading-tight">
+                {name}
               </p>
             </div>
           ))}
@@ -340,10 +383,16 @@ export const PartnersSection = () => {
 
         {/* Университеты */}
         <div className="grid grid-cols-6 gap-6 mb-16">
-          {universityLogos.map((logo, index) => (
+          {[
+            'УНИВЕРСИТЕТ\nИННОПОЛИС', 'Санкт-Петербургский\nгосударственный\nуниверситет', 'ПОЛИТЕХ', 
+            'МОСКОВСКИЙ\nПОЛИТЕХ', 'ТОМСКИЙ\nПОЛИТЕХ', 'НЭТИ'
+          ].map((name, index) => (
             <div key={index} className="text-center p-4 bg-gray-900/20 rounded-xl border border-gray-800">
-              <p className="text-sm font-bold text-white whitespace-pre-line">
-                {logo}
+              <div className="w-12 h-12 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">{name.split('\n')[0].slice(0, 3)}</span>
+              </div>
+              <p className="text-xs font-bold text-white whitespace-pre-line leading-tight">
+                {name}
               </p>
             </div>
           ))}
@@ -351,10 +400,15 @@ export const PartnersSection = () => {
 
         {/* Дополнительные партнеры */}
         <div className="grid grid-cols-5 gap-6">
-          {additionalLogos.map((logo, index) => (
+          {[
+            'СПбГУТ', 'СПбГЭТУ «ЛЭТИ»', 'МОИ', 'РУБИН', 'СПЕЦИАЛЬНЫЙ\nТЕХНОЛОГИЧЕСКИЙ\nЦЕНТР'
+          ].map((name, index) => (
             <div key={index} className="text-center p-4 bg-gray-900/20 rounded-xl border border-gray-800">
-              <p className="text-sm font-bold text-white">
-                {logo}
+              <div className="w-12 h-12 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">{name.split('\n')[0].slice(0, 3)}</span>
+              </div>
+              <p className="text-xs font-bold text-white whitespace-pre-line leading-tight">
+                {name}
               </p>
             </div>
           ))}
@@ -364,16 +418,16 @@ export const PartnersSection = () => {
   );
 };
 
-// Footer - точная копия оригинала
+// Footer - БЕЗ ЗНАЧКОВ
 export const FooterSection = () => {
   return (
     <footer className="py-16 bg-black border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-8">
         <div className="text-center">
           <div className="w-24 h-24 border-4 border-white rounded-2xl flex items-center justify-center mx-auto mb-8 bg-black">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="white">
-              <path d="M13 3L4 14h7v7l9-11h-7V3z"/>
-            </svg>
+            <div className="text-white text-center font-bold">
+              <div className="text-xs">ВАС</div>
+            </div>
           </div>
           
           <div className="border-t border-gray-800 pt-8">
@@ -385,7 +439,7 @@ export const FooterSection = () => {
   );
 };
 
-// Cookie Notice - точная копия оригинала
+// Cookie Notice - без изменений
 export const CookieNotice = ({ onAccept }) => {
   return (
     <div className="fixed bottom-6 left-6 z-50 max-w-sm">

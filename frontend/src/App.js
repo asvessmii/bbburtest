@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import { Header, HeroSection, TechnologiesGrid, AboutSection, PartnersSection, FooterSection, CookieNotice } from './components';
+import { Header, HeroSection, TechnologiesGrid, AboutSection, TeamSection, PartnersSection, FooterSection, CookieNotice } from './components';
 
 function App() {
   const [showCookieNotice, setShowCookieNotice] = useState(true);
@@ -18,6 +18,9 @@ function App() {
       
       {/* About Section */}
       <AboutSection />
+      
+      {/* Team Section */}
+      <TeamSection />
       
       {/* Partners Section */}
       <PartnersSection />

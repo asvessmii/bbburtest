@@ -1,18 +1,15 @@
 import React from 'react';
 
-// Header Component - исправленная версия
 export const Header = () => {
   return (
     <header className="fixed top-0 w-full z-50 bg-transparent">
       <div className="max-w-7xl mx-auto px-8 py-6 flex justify-between items-center">
-        {/* Центральный логотип - БЕЗ МОЛНИИ */}
         <div className="absolute left-1/2 transform -translate-x-1/2">
           <div className="bg-white rounded-full px-8 py-3 flex items-center">
             <span className="text-black font-bold text-xl">ТЕХНОПАРК ВАС</span>
           </div>
         </div>
         
-        {/* Логотип справа - БЕЗ СТРЕЛОК, только текст */}
         <div className="border-2 border-white rounded-xl px-6 py-4 ml-auto">
           <div className="text-white text-sm font-bold leading-tight text-center">
             <div>ВОЕННАЯ</div>
@@ -25,13 +22,10 @@ export const Header = () => {
   );
 };
 
-// Hero Section - исправленная версия
 export const HeroSection = () => {
   return (
     <section className="relative min-h-screen bg-black overflow-hidden">
-      {/* Фон с частицами - точно как в оригинале */}
       <div className="absolute inset-0 bg-black">
-        {/* Зеленые частицы */}
         <div className="absolute top-32 left-20 w-6 h-6 bg-green-400 rounded-full opacity-80 blur-sm"></div>
         <div className="absolute top-48 left-40 w-4 h-4 bg-green-300 rounded-full opacity-70"></div>
         <div className="absolute top-80 left-60 w-5 h-5 bg-green-500 rounded-full opacity-60"></div>
@@ -39,17 +33,14 @@ export const HeroSection = () => {
         <div className="absolute bottom-40 left-32 w-4 h-4 bg-green-300 rounded-full opacity-70"></div>
         <div className="absolute bottom-60 left-56 w-6 h-6 bg-green-500 rounded-full opacity-60 blur-sm"></div>
         
-        {/* Розовые частицы */}
         <div className="absolute top-40 right-80 w-5 h-5 bg-pink-400 rounded-full opacity-75"></div>
         <div className="absolute top-72 right-60 w-4 h-4 bg-pink-300 rounded-full opacity-80"></div>
         <div className="absolute bottom-32 right-40 w-6 h-6 bg-pink-500 rounded-full opacity-70 blur-sm"></div>
         <div className="absolute bottom-80 right-72 w-3 h-3 bg-pink-400 rounded-full opacity-85"></div>
       </div>
 
-      {/* Центральная 3D фигура - точно как в оригинале */}
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96">
         <div className="relative w-full h-full">
-          {/* Основная 3D форма */}
           <div className="absolute inset-0 bg-gradient-to-br from-green-400 via-pink-500 to-green-300 rounded-3xl transform rotate-12 opacity-90" 
                style={{
                  background: 'linear-gradient(135deg, #4ade80 0%, #ec4899 30%, #22c55e 60%, #f97316 100%)',
@@ -57,7 +48,6 @@ export const HeroSection = () => {
                  filter: 'blur(1px)'
                }}>
           </div>
-          {/* Дополнительные 3D элементы */}
           <div className="absolute top-4 right-4 w-32 h-32 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full opacity-80 transform rotate-45"
                style={{borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%'}}>
           </div>
@@ -67,18 +57,18 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Текст слева внизу - ИСПРАВЛЕННЫЙ ЗАГОЛОВОК БЕЗ КВАДРАТА */}
       <div className="absolute bottom-32 left-16">
         <h1 className="text-7xl font-black leading-none text-white mb-4">
           ТЕХНОЛОГИИ
-          <br />
+            
+
           СВЯЗЬ
-          <br />
+            
+
           ПОБЕДА
         </h1>
       </div>
 
-      {/* Текст справа - точно как в оригинале */}
       <div className="absolute top-1/2 right-16 w-80 transform -translate-y-1/2">
         <p className="text-lg text-white leading-relaxed">
           Технопарк Военной академии связи – это инновационная площадка, где сливаются воедино наука, технологии и творчество. Это пространство возможностей для талантливых курсантов, кадетов и операторов научной роты ВАС, где они осваивают новые компетенции, создают прорывные проекты и воплощают идеи в реальные продукты.
@@ -88,7 +78,6 @@ export const HeroSection = () => {
   );
 };
 
-// Technologies Grid - без изменений
 export const TechnologiesGrid = () => {
   const technologies = [
     { title: 'Информационная\nбезопасность', gradient: 'from-blue-500 via-purple-600 to-blue-700' },
@@ -140,7 +129,6 @@ export const TechnologiesGrid = () => {
         </div>
       </div>
       
-      {/* 3D элемент справа */}
       <div className="absolute bottom-0 right-16 w-40 h-40 bg-gradient-to-br from-blue-500 to-purple-600 opacity-60 rounded-full transform rotate-45"
            style={{borderRadius: '60% 40% 30% 70% / 60% 30% 70% 40%'}}>
       </div>
@@ -148,12 +136,10 @@ export const TechnologiesGrid = () => {
   );
 };
 
-// About Section - без изменений
 export const AboutSection = () => {
   return (
     <section className="py-24 bg-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8">
-        {/* Прокручивающийся текст */}
         <div className="overflow-hidden mb-20">
           <div className="animate-scroll whitespace-nowrap text-8xl font-black text-white/10">
             ТЕХНОПАРК - ЭТО ЛЮДИ &nbsp;&nbsp;&nbsp; ТЕХНОПАРК - ЭТО ЛЮДИ &nbsp;&nbsp;&nbsp; ТЕХНОПАРК - ЭТО ЛЮДИ
@@ -161,7 +147,6 @@ export const AboutSection = () => {
         </div>
         
         <div className="flex items-center justify-between">
-          {/* Левая часть */}
           <div className="w-1/2">
             <div className="mb-8">
               <div className="text-sm text-gray-400 mb-4 font-medium tracking-wider">ОСНОВАН В</div>
@@ -174,7 +159,6 @@ export const AboutSection = () => {
             </p>
           </div>
           
-          {/* Правая часть */}
           <div className="w-1/2 text-center">
             <div className="text-9xl font-black mb-4 text-white">200</div>
             <div className="text-xl text-gray-400 mb-4 font-medium">человек</div>
@@ -188,28 +172,24 @@ export const AboutSection = () => {
   );
 };
 
-// Team Section - с фотографиями военного характера (заменим на забавные военные фото)
 export const TeamSection = () => {
   return (
     <section className="py-24 bg-black relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-8">
-        {/* Прокручивающийся текст */}
         <div className="overflow-hidden mb-20">
           <div className="animate-scroll whitespace-nowrap text-8xl font-black text-white/10">
             ТЕХНОПАРК - ЭТО ЛЮДИ &nbsp;&nbsp;&nbsp; ТЕХНОПАРК - ЭТО ЛЮДИ &nbsp;&nbsp;&nbsp; ТЕХНОПАРК - ЭТО ЛЮДИ
           </div>
         </div>
         
-        {/* Первый член команды - Майор Пейн 1 */}
         <div className="flex items-center justify-between mb-32">
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="https://customer-assets.emergentagent.com/job_vas-clone/artifacts/m3huut1q_image.png"
+                src="" 
                 alt="Лаута Олег Сергеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />
-              {/* 3D элементы вокруг */}
               <div className="absolute -top-8 -left-8 w-20 h-20 bg-gradient-to-br from-blue-400 to-purple-500 rounded-full opacity-80"></div>
               <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-gradient-to-br from-pink-400 to-blue-500 opacity-70 rounded-full"></div>
               <div className="absolute top-8 -right-4 w-8 h-8 bg-cyan-400 rounded-full opacity-90"></div>
@@ -220,7 +200,8 @@ export const TeamSection = () => {
           <div className="w-1/2 pl-16">
             <h3 className="text-6xl font-black mb-6 text-white">
               ЛАУТА <span className="text-blue-400">Олег</span>
-              <br />
+                
+
               <span className="text-blue-400">Сергеевич</span>
             </h3>
             <div className="w-40 h-1 bg-white mb-6"></div>
@@ -230,12 +211,12 @@ export const TeamSection = () => {
           </div>
         </div>
 
-        {/* Второй член команды - Майор Пейн 2 */}
         <div className="flex items-center justify-between">
           <div className="w-1/2 pr-16 text-right">
             <h3 className="text-6xl font-black mb-6 text-white">
               ВАСИЛЬЕВ <span className="text-blue-400">Никита</span>
-              <br />
+                
+
               <span className="text-blue-400">Алексеевич</span>
             </h3>
             <div className="w-40 h-1 bg-white mb-6 ml-auto"></div>
@@ -247,11 +228,10 @@ export const TeamSection = () => {
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="https://customer-assets.emergentagent.com/job_vas-clone/artifacts/3hmtezn1_image.png"
+                src="" 
                 alt="Васильев Никита Алексеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />
-              {/* 3D элементы вокруг */}
               <div className="absolute -top-6 -right-8 w-24 h-24 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full opacity-75"></div>
               <div className="absolute -bottom-8 -left-8 w-18 h-18 bg-gradient-to-br from-cyan-400 to-blue-500 opacity-80 rounded-full"></div>
               <div className="absolute top-12 -left-4 w-10 h-10 bg-pink-400 rounded-full opacity-85"></div>
@@ -264,7 +244,6 @@ export const TeamSection = () => {
   );
 };
 
-// Partners Section - ИСПРАВЛЕННАЯ ВЕРСИЯ согласно оригиналу
 export const PartnersSection = () => {
   return (
     <section className="py-24 bg-black">
@@ -273,7 +252,6 @@ export const PartnersSection = () => {
           СОТРУДНИЧЕСТВО
         </h2>
         
-        {/* Государственные структуры - верхняя строка */}
         <div className="grid grid-cols-4 gap-8 mb-16">
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
@@ -282,7 +260,8 @@ export const PartnersSection = () => {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Министерство обороны<br />Российской Федерации
+              Министерство обороны  
+Российской Федерации
             </p>
           </div>
 
@@ -293,7 +272,8 @@ export const PartnersSection = () => {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Федеральная служба безопасности<br />Российской Федерации
+              Федеральная служба безопасности  
+Российской Федерации
             </p>
           </div>
 
@@ -304,7 +284,8 @@ export const PartnersSection = () => {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Федеральная служба охраны<br />Российской Федерации
+              Федеральная служба охраны  
+Российской Федерации
             </p>
           </div>
 
@@ -315,12 +296,12 @@ export const PartnersSection = () => {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Силы специальных операций<br />Российской Федерации
+              Силы специальных операций  
+Российской Федерации
             </p>
           </div>
         </div>
 
-        {/* Государственные структуры - нижняя строка */}
         <div className="grid grid-cols-3 gap-8 mb-16 justify-center">
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
@@ -329,108 +310,105 @@ export const PartnersSection = () => {
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Служба внешней разведки<br />Российской Федерации
+              Служба внешней разведки  
+Российской Федерации
             </p>
           </div>
 
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
               <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">ФСВНГ</span>
+                <span className="text-white font-bold text-xs">ФСТЭК</span>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Федеральная служба войск<br />национальной гвардии<br />Российской Федерации
+              Федеральная служба по техническому  
+и экспортному контролю
             </p>
           </div>
 
           <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
             <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
               <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">ГУС</span>
+                <span className="text-white font-bold text-xs">ФСВТС</span>
               </div>
             </div>
             <p className="text-sm text-gray-300 leading-tight">
-              Главное управление связи<br />Вооруженных сил<br />Российской Федерации
+              Федеральная служба по военно-техническому  
+сотрудничеству
             </p>
           </div>
         </div>
 
-        {/* Корпоративные партнеры */}
-        <div className="grid grid-cols-6 gap-6 mb-16">
-          {[
-            'СБЕР', 'ОТКРЫТАЯ\nМОБИЛЬНАЯ\nПЛАТФОРМА', 'масштаб', 'Folus', 'ГАЗПРОМБАНК', 'МИНОБРНАУКИ\nРОССИИ'
-          ].map((name, index) => (
-            <div key={index} className="text-center p-4 bg-gray-900/20 rounded-xl border border-gray-800">
-              <div className="w-12 h-12 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">{name.split('\n')[0].slice(0, 3)}</span>
-              </div>
-              <p className="text-xs font-bold text-white whitespace-pre-line leading-tight">
-                {name}
-              </p>
-            </div>
-          ))}
-        </div>
+        <h3 className="text-4xl font-black mb-12 text-center text-white">
+          Крупные предприятия и корпорации
+        </h3>
 
-        {/* Университеты */}
-        <div className="grid grid-cols-6 gap-6 mb-16">
-          {[
-            'УНИВЕРСИТЕТ\nИННОПОЛИС', 'Санкт-Петербургский\nгосударственный\nуниверситет', 'ПОЛИТЕХ', 
-            'МОСКОВСКИЙ\nПОЛИТЕХ', 'ТОМСКИЙ\nПОЛИТЕХ', 'НЭТИ'
-          ].map((name, index) => (
-            <div key={index} className="text-center p-4 bg-gray-900/20 rounded-xl border border-gray-800">
-              <div className="w-12 h-12 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">{name.split('\n')[0].slice(0, 3)}</span>
+        <div className="grid grid-cols-4 gap-8">
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">Ростех</span>
               </div>
-              <p className="text-xs font-bold text-white whitespace-pre-line leading-tight">
-                {name}
-              </p>
             </div>
-          ))}
-        </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Государственная корпорация  
+"Ростех"
+            </p>
+          </div>
 
-        {/* Дополнительные партнеры */}
-        <div className="grid grid-cols-5 gap-6">
-          {[
-            'СПбГУТ', 'СПбГЭТУ «ЛЭТИ»', 'МОИ', 'РУБИН', 'СПЕЦИАЛЬНЫЙ\nТЕХНОЛОГИЧЕСКИЙ\nЦЕНТР'
-          ].map((name, index) => (
-            <div key={index} className="text-center p-4 bg-gray-900/20 rounded-xl border border-gray-800">
-              <div className="w-12 h-12 mx-auto mb-2 bg-gray-700 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-xs">{name.split('\n')[0].slice(0, 3)}</span>
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">Росатом</span>
               </div>
-              <p className="text-xs font-bold text-white whitespace-pre-line leading-tight">
-                {name}
-              </p>
             </div>
-          ))}
+            <p className="text-sm text-gray-300 leading-tight">
+              Государственная корпорация  
+по атомной энергии "Росатом"
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">Газпром</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Публичное акционерное общество  
+"Газпром"
+            </p>
+          </div>
+
+          <div className="text-center p-8 bg-gray-900/20 rounded-2xl border border-gray-800">
+            <div className="w-20 h-20 mx-auto mb-4 bg-gray-700 rounded-xl flex items-center justify-center">
+              <div className="w-16 h-16 bg-gray-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-xs">Лукойл</span>
+              </div>
+            </div>
+            <p className="text-sm text-gray-300 leading-tight">
+              Публичное акционерное общество  
+"Лукойл"
+            </p>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-// Footer - БЕЗ ЗНАЧКОВ
 export const FooterSection = () => {
   return (
-    <footer className="py-16 bg-black border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="text-center">
-          <div className="w-24 h-24 border-4 border-white rounded-2xl flex items-center justify-center mx-auto mb-8 bg-black">
-            <div className="text-white text-center font-bold">
-              <div className="text-xs">ВАС</div>
-            </div>
-          </div>
-          
-          <div className="border-t border-gray-800 pt-8">
-            <p className="text-gray-400">&copy; 2025 Технопарк ВАС</p>
-          </div>
-        </div>
+    <footer className="bg-gray-900 py-12">
+      <div className="max-w-7xl mx-auto px-8 text-center text-gray-400">
+        <p>&copy; 2024 Технопарк Военной академии связи. Все права защищены.</p>
+        <p className="mt-2">Разработано командой Технопарка ВАС</p>
       </div>
     </footer>
   );
 };
 
-// Cookie Notice - без изменений
 export const CookieNotice = ({ onAccept }) => {
   return (
     <div className="fixed bottom-6 left-6 z-50 max-w-sm">

@@ -186,7 +186,7 @@ export const TeamSection = () => {
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="" 
+                src="https://citaty.info/files/portraits/maior-benson-uinifred-pein.jpg" 
                 alt="Лаута Олег Сергеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />
@@ -228,7 +228,7 @@ export const TeamSection = () => {
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="" 
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRMOrZVl0fmZhyBhYV5Ju4zZMGM22V5i8FKw&s" 
                 alt="Васильев Никита Алексеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />

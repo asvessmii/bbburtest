@@ -230,7 +230,7 @@ export const TeamSection = () => {
           </div>
         </div>
 
-        {/* Второй член команды */}
+        {/* Второй член команды - Майор Пейн 2 */}
         <div className="flex items-center justify-between">
           <div className="w-1/2 pr-16 text-right">
             <h3 className="text-6xl font-black mb-6 text-white">
@@ -247,7 +247,7 @@ export const TeamSection = () => {
           <div className="w-1/2 relative">
             <div className="relative w-80 h-96 mx-auto">
               <img 
-                src="https://images.unsplash.com/photo-1572866069442-e7ac919a5c01?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njd8MHwxfHNlYXJjaHwyfHxtaWxpdGFyeSUyMGNvbWVkeXxlbnwwfHx8fDE3NTM3OTA0NjZ8MA&ixlib=rb-4.1.0&q=85"
+                src="https://customer-assets.emergentagent.com/job_vas-clone/artifacts/3hmtezn1_image.png"
                 alt="Васильев Никита Алексеевич"
                 className="w-full h-full object-cover rounded-3xl"
               />

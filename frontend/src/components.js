@@ -39,7 +39,7 @@ export const HeroSection = () => {
         <div className="absolute bottom-80 right-72 w-3 h-3 bg-pink-400 rounded-full opacity-85"></div>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96">
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96">
         <div className="relative w-full h-full">
           <div className="absolute inset-0 bg-gradient-to-br from-green-400 via-pink-500 to-green-300 rounded-3xl transform rotate-12 opacity-90" 
                style={{
@@ -57,14 +57,12 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-32 left-16">
-        <h1 className="text-7xl font-black leading-none text-white mb-4">
+           <div className="absolute top-1/2 left-24 transform -translate-y-1/2">
+        <h1 className="text-7xl font-black leading-tight text-white">
           ТЕХНОЛОГИИ
-            
-
+          <br />
           СВЯЗЬ
-            
-
+          <br />
           ПОБЕДА
         </h1>
       </div>

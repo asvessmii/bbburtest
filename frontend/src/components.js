@@ -67,17 +67,8 @@ export const HeroSection = () => {
         </div>
       </div>
 
-      {/* Логотип ВАС слева внизу - БЕЗ ЗНАЧКОВ */}
+      {/* Текст слева внизу - ИСПРАВЛЕННЫЙ ЗАГОЛОВОК БЕЗ КВАДРАТА */}
       <div className="absolute bottom-32 left-16">
-        <div className="w-32 h-32 border-4 border-white rounded-2xl flex items-center justify-center bg-black/20 backdrop-blur-sm">
-          <div className="text-white text-center font-bold">
-            <div className="text-xs">ВАС</div>
-          </div>
-        </div>
-      </div>
-
-      {/* Текст слева внизу - ИСПРАВЛЕННЫЙ ЗАГОЛОВОК */}
-      <div className="absolute bottom-32 left-56">
         <h1 className="text-7xl font-black leading-none text-white mb-4">
           ТЕХНОЛОГИИ
           <br />
